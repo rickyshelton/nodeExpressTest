@@ -1,0 +1,14 @@
+{
+  "name": "nodeexpresstest",
+  "version": "1.0.0",
+  "description": "Quick test using express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
