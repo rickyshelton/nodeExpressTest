@@ -28,5 +28,5 @@ app.get('/google', function(req, res) {
 });
 
 app.listen(app.get('port'), function () {
-  log.info('Example app listening on port 3000!');
+  log.info('Example app listening on port ' + app.get('port'));
 });
