@@ -4,6 +4,7 @@ var request = require('request');
 var bunyan = require('bunyan');
 var log = bunyan.createLogger({name: 'nodeExpressTest'});
 
+app.set('port', process.env.PORT || 3000);
 
 app.get('/', function (req, res) {
   log.info('Hello World called');
@@ -26,6 +27,6 @@ app.get('/google', function(req, res) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(app.get('port'), function () {
   log.info('Example app listening on port 3000!');
 });
